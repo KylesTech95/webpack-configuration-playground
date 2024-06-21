@@ -8,8 +8,9 @@ module.exports = {
         // test for loaders: css, scss
         test: /\.(s)?css$/i,
         exclude: /\/node_modules/i,
-        use: [MiniCssExpressPlugin.loader, "css-loader", "sass-loader"], // how do you want me to handle this?
+        use: [MiniCssExpressPlugin.loader, "css-loader", "sass-loader","postcss-loader"], // how do you want me to handle this?
       },
     ],
   },
+  devtool:"source-map"
 };

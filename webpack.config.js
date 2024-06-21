@@ -1,21 +1,27 @@
+const path = require('path')
 const MiniCssExpressPlugin = require("mini-css-extract-plugin");
 module.exports = {
-  plugins: [new MiniCssExpressPlugin()],
-  mode: "development",
+  entry: "./src/index.js", // entry point
+  output: {
+    filename: "main.js", // frontend js index
+    path: path.resolve(__dirname, "dist"), // path to dist/public
+  },
+  plugins: [new MiniCssExpressPlugin()], // css extractor
+  mode: "development", // mode dev/prod
   module: {
     rules: [
       {
         // test for loaders: css, scss
-        test: /\.(s)?css$/i,
-        exclude: /\/node_modules/i,
+        test: /\.(s)?css$/i, // test for css & scss
+        exclude: /\/node_modules/i, // exclude node_modules
         use: [
           MiniCssExpressPlugin.loader,
           "css-loader",
           "sass-loader",
           "postcss-loader",
-        ], // how do you want me to handle this?
+        ], // different types of loaders
       },
     ],
   },
-  devtool: "source-map",
+//   devtool: "source-map", // source map. optional
 };

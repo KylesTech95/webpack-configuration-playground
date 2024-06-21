@@ -1,29 +1,31 @@
 {
-    "name": "webpack-template",
-    "author": "kyle Anthony",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "npx webpack",
-        "build": "webpack",
-        "build:watch": "webpack --watch",
-        "serve": "webpack serve"
-    },
-    "keywords": [],
-    "devDependencies": {
-        "css-loader": "^7.1.2",
-        "dotenv": "^16.4.5",
-        "mini-css-extract-plugin": "^2.9.0",
-        "postcss": "^8.4.38",
-        "postcss-loader": "^8.1.1",
-        "postcss-preset-env": "^9.5.14",
-        "style-loader": "^4.0.0",
-        "webpack": "^5.92.1",
-        "webpack-cli": "^5.1.4"
-    },
-    "dependencies": {
-        "sass": "^1.77.6",
-        "sass-loader": "^14.2.1"
-    }
+  "name": "webpack-template",
+  "author": "kyle Anthony",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx webpack",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "build:watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "dotenv": "^16.4.5",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^9.5.14",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1"
+  }
 }

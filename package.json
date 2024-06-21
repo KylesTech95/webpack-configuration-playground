@@ -1,0 +1,22 @@
+{
+    "name": "webpack-template",
+    "author": "kyle Anthony",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx webpack",
+        "serve": "webpack serve"
+    },
+    "keywords": [],
+    "devDependencies": {
+        "css-loader": "^7.1.2",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.92.1",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "sass": "^1.77.6",
+        "sass-loader": "^14.2.1"
+    }
+}

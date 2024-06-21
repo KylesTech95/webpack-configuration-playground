@@ -1,4 +1,10 @@
+:root{
+    --bgDefault:violet;
+}
 $text-color: #fff;
+body{
+    background-color:var(--bgDefault);
+}
 .container>h1{
     color: $text-color;
     border:3px solid #333;
